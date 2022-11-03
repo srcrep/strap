@@ -1,6 +1,6 @@
 #!/bin/bash
 
-depends ()
+downloaddepends ()
 {
   sudo apt install \
   dwm \
@@ -15,12 +15,24 @@ depends ()
   /
 }
 
-reqs ()
+downloadreqs ()
 {
   python3 -m pip install --upgrade pipreqs
   cd /strap/bet/
   pipreqs
   python3 -m pip install --upgrade -r requirements.txt
+}
+
+setuprdp ()
+{
+  sudo adduser xrdp ssl-cert
+  sudo systemctl restart xrdp
+}
+
+adduser ()
+{
+  sudo adduser user --gecos "First,Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
+  echo "user:passwordincleartextcausefuckit" | sudo chpasswd
 }
 
 sign ()
@@ -34,7 +46,7 @@ bet ()
   python3 main.py
 }
 
-depends
-reqs
-sign
-bet
+downloaddepends
+downloadreqs
+setuprdp
+adduser
