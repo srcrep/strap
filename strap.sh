@@ -46,7 +46,4 @@ bet ()
   python3 main.py
 }
 
-downloaddepends
-downloadreqs
-setuprdp
-adduser
+bet
