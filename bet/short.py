@@ -1,5 +1,6 @@
 import pyautogui
 import time
+import sys
 
 def loop():
     time.sleep(1)
