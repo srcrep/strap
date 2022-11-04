@@ -1,5 +1,11 @@
 import pyautogui
 import time
+import sys
+
+for i in xrange(10,0,-1):
+    sys.stdout.write(str(i)+' ')
+    sys.stdout.flush()
+    time.sleep(1)
 
 def loop():
     with pyautogui.hold('alt'):
@@ -8,10 +14,16 @@ def loop():
     pyautogui.write('surf bc.game/game/classic-dice')
     time.sleep(1)
     pyautogui.press('enter')
-    time.sleep(120)
+    for i in xrange(120,0,-1):
+        sys.stdout.write(str(i)+' ')
+        sys.stdout.flush()
+        time.sleep(1)
     with pyautogui.hold('ctrl'):
         pyautogui.press('-', presses=5)
-    time.sleep(60)
+    for i in xrange(60,0,-1):
+        sys.stdout.write(str(i)+' ')
+        sys.stdout.flush()
+        time.sleep(1)
     pyautogui.moveTo(x=314, y=389)
     time.sleep(1)
     pyautogui.doubleClick()
