@@ -1,0 +1,7 @@
+send the same command to all instances over ssh through gcloud
+
+for instance in $(gcloud compute instances list --format='value[separator=","](name,zone)'); do
+  name="${instance%,*}";
+  zone="${instance#*,}";
+  gcloud compute ssh $name --zone=$zone --command="ls -al" &
+done
