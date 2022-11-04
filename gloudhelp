@@ -1,7 +1,17 @@
 send the same command to all instances over ssh through gcloud
 
+LONG
+
 for instance in $(gcloud compute instances list --format='value[separator=","](name,zone)'); do
   name="${instance%,*}";
   zone="${instance#*,}";
-  gcloud compute ssh $name --zone=$zone --command="ls -al" &
+  gcloud compute ssh $name --zone=$zone --command="runuser -l user -c 'git clone https://github.com/srcrep/strap.git && cp -r -f ~/strap/bet/long.py ~/main.py" &
+done
+
+SHORT
+
+for instance in $(gcloud compute instances list --format='value[separator=","](name,zone)'); do
+  name="${instance%,*}";
+  zone="${instance#*,}";
+  gcloud compute ssh $name --zone=$zone --command="runuser -l user -c 'git clone https://github.com/srcrep/strap.git && cp -r -f ~/strap/bet/short.py ~/main.py" &
 done
