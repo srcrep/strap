@@ -9,13 +9,13 @@ def loop():
     pyautogui.write('surf bc.game/game/classic-dice')
     time.sleep(1)
     pyautogui.press('enter')
-    for i in xrange(120,0,-1):
+    for i in range(120,0,-1):
         sys.stdout.write(str(i)+' ')
         sys.stdout.flush()
         time.sleep(1)
     with pyautogui.hold('ctrl'):
         pyautogui.press('-', presses=5)
-    for i in xrange(60,0,-1):
+    for i in range(60,0,-1):
         sys.stdout.write(str(i)+' ')
         sys.stdout.flush()
         time.sleep(1)
