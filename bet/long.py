@@ -22,44 +22,37 @@ def loop():
     time.sleep(1)
     pyautogui.click(x=174, y=119)
     time.sleep(1)
-    """
-    pyautogui.moveTo(x=102, y=166)
-    time.sleep(1)
-    pyautogui.doubleClick()
-    time.sleep(1)
-    pyautogui.write('0.0001')
-    time.sleep(1)
-    pyautogui.press('enter')
-    time.sleep(1)
-    """
     pyautogui.click(x=75, y=360)
     time.sleep(1)
     pyautogui.moveTo(x=155, y=355)
     time.sleep(1)
     pyautogui.doubleClick()
     time.sleep(1)
-    pyautogui.write('100000')
+    pyautogui.write('10000')
     time.sleep(1)
     pyautogui.press('enter')
     time.sleep(1)
+    print('loop')
     return
 
 def start():
     time.sleep(1)
     pyautogui.click(x=135, y=524)
     time.sleep(1)
+    print('start')
     return
 
 def speedmod():
     time.sleep(1)
     pyautogui.moveTo(x=374, y=496)
-    time.sleep(5)
+    time.sleep(10)
     pyautogui.click()
     time.sleep(1)
     pyautogui.moveTo(x=405, y=496)
-    time.sleep(5)
+    time.sleep(10)
     pyautogui.click()
     time.sleep(1)
+    print('speedmod')
     return
 
 def main():

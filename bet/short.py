@@ -2,6 +2,7 @@ import pyautogui
 import time
 
 def loop():
+    time.sleep(1)
     with pyautogui.hold('alt'):
         pyautogui.press('p')
     time.sleep(1)
@@ -22,14 +23,6 @@ def loop():
     time.sleep(1)
     pyautogui.click(x=174, y=119)
     time.sleep(1)
-    pyautogui.moveTo(x=102, y=166)
-    time.sleep(1)
-    pyautogui.doubleClick()
-    time.sleep(1)
-    pyautogui.write('0.0001')
-    time.sleep(1)
-    pyautogui.press('enter')
-    time.sleep(1)
     pyautogui.click(x=75, y=360)
     time.sleep(1)
     pyautogui.moveTo(x=155, y=355)
@@ -40,12 +33,14 @@ def loop():
     time.sleep(1)
     pyautogui.press('enter')
     time.sleep(1)
+    print('loop')
     return
 
 def start():
     time.sleep(1)
     pyautogui.click(x=135, y=524)
     time.sleep(1)
+    print('start')
     return
 
 def speedmod():
@@ -58,6 +53,7 @@ def speedmod():
     time.sleep(5)
     pyautogui.click()
     time.sleep(1)
+    print('speedmod')
     return
 
 def main():
