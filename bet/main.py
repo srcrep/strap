@@ -19,7 +19,7 @@ def main():
     time.sleep(1)
     pyautogui.press('enter')
     pause(120)
-    pyautogui.hold('ctrl'):
+    with pyautogui.hold('ctrl'):
         pyautogui.press('-', presses=6)
     pause(120)
     pyautogui.moveTo(x=232, y=372)
@@ -51,7 +51,7 @@ def main():
     time.sleep(1)
     pyautogui.press('enter')
     pause(120)
-    pyautogui.hold('ctrl'):
+    with pyautogui.hold('ctrl'):
         pyautogui.press('-', presses=6)
     pause(120)
     pyautogui.moveTo(x=232, y=372)
@@ -85,7 +85,7 @@ def main():
     time.sleep(1)
     pyautogui.press('enter')
     pause(120)
-    pyautogui.hold('ctrl'):
+    with pyautogui.hold('ctrl'):
         pyautogui.press('-', presses=6)
     pause(120)
     pyautogui.moveTo(x=232, y=372)
@@ -117,7 +117,7 @@ def main():
     time.sleep(1)
     pyautogui.press('enter')
     pause(120)
-    pyautogui.hold('ctrl'):
+    with pyautogui.hold('ctrl'):
         pyautogui.press('-', presses=6)
     pause(120)
     pyautogui.moveTo(x=232, y=372)
