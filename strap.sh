@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec ~/strap/src/setup.sh
+exec ~/strap/setup.sh
