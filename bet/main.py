@@ -7,7 +7,7 @@ from os import system
 def pause(a):
     for i in trange(a):
         sleep(1)
-    os.system('clear')
+        os.system('clear')
     return
 
 def main():
