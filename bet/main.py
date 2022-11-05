@@ -1,8 +1,15 @@
 import pyautogui
 import time
 import sys
+from tqdm import trange
 
-def loop():
+def pause(a):
+    for i in trange(a):
+        sleep(1)
+    return
+
+def main():
+
     time.sleep(1)
     with pyautogui.hold('alt'):
         pyautogui.press('p')
@@ -10,35 +17,21 @@ def loop():
     pyautogui.write('surf bc.game/game/classic-dice')
     time.sleep(1)
     pyautogui.press('enter')
-    for i in range(120,0,-1):
-        sys.stdout.write(str(i)+' ')
-        sys.stdout.flush()
-        time.sleep(1)
-    with pyautogui.hold('ctrl'):
-        pyautogui.press('-', presses=5)
-    for i in range(60,0,-1):
-        sys.stdout.write(str(i)+' ')
-        sys.stdout.flush()
-        time.sleep(1)
-    pyautogui.moveTo(x=314, y=389)
-    time.sleep(1)
+    pause(120)
+    pyautogui.hold('ctrl'):
+        pyautogui.press('-', presses=6)
+    pause(120)
+    pyautogui.moveTo(x=232, y=372)
+    time.sleep(3)
     pyautogui.doubleClick()
-    time.sleep(1)
+    time.sleep(3)
     pyautogui.write('4.95')
     time.sleep(1)
     pyautogui.press('enter')
+    time.sleep(3)
+    pyautogui.click(x=60, y=358)
     time.sleep(1)
-    pyautogui.click(x=174, y=119)
-    time.sleep(1)
-    pyautogui.moveTo(x=100, y=165)
-    time.sleep(1)
-    pyautogui.doubleClick()
-    time.sleep(1)
-    pyautogui.write('0.0001')
-    time.sleep(1)
-    pyautogui.click(x=75, y=360)
-    time.sleep(1)
-    pyautogui.moveTo(x=155, y=355)
+    pyautogui.moveTo(x=146, y=360)
     time.sleep(1)
     pyautogui.doubleClick()
     time.sleep(1)
@@ -46,42 +39,99 @@ def loop():
     time.sleep(1)
     pyautogui.press('enter')
     time.sleep(1)
-    print('loop')
+    
+    time.sleep(1)
+    with pyautogui.hold('alt'):
+        pyautogui.press('p')
+    time.sleep(1)
+    pyautogui.write('surf bc.game/game/classic-dice')
+    time.sleep(1)
+    pyautogui.press('enter')
+    pause(120)
+    pyautogui.hold('ctrl'):
+        pyautogui.press('-', presses=6)
+    pause(120)
+    pyautogui.moveTo(x=232, y=372)
+    time.sleep(3)
+    pyautogui.doubleClick()
+    time.sleep(3)
+    pyautogui.write('4.95')
+    time.sleep(1)
+    pyautogui.press('enter')
+    time.sleep(3)
+    pyautogui.click(x=345, y=375)
+    time.sleep(3)
+    pyautogui.click(x=60, y=358)
+    time.sleep(1)
+    pyautogui.moveTo(x=146, y=360)
+    time.sleep(1)
+    pyautogui.doubleClick()
+    time.sleep(1)
+    pyautogui.write('25')
+    time.sleep(1)
+    pyautogui.press('enter')
+    time.sleep(1)
+
+    time.sleep(1)
+    with pyautogui.hold('alt'):
+        pyautogui.press('p')
+    time.sleep(1)
+    pyautogui.write('surf bc.game/game/classic-dice')
+    time.sleep(1)
+    pyautogui.press('enter')
+    pause(120)
+    pyautogui.hold('ctrl'):
+        pyautogui.press('-', presses=6)
+    pause(120)
+    pyautogui.moveTo(x=232, y=372)
+    time.sleep(3)
+    pyautogui.doubleClick()
+    time.sleep(3)
+    pyautogui.write('1.2375')
+    time.sleep(1)
+    pyautogui.press('enter')
+    time.sleep(3)
+    pyautogui.click(x=60, y=358)
+    time.sleep(1)
+    pyautogui.moveTo(x=146, y=360)
+    time.sleep(1)
+    pyautogui.doubleClick()
+    time.sleep(1)
+    pyautogui.write('25')
+    time.sleep(1)
+    pyautogui.press('enter')
+    time.sleep(1)
+    
+    time.sleep(1)
+    with pyautogui.hold('alt'):
+        pyautogui.press('p')
+    time.sleep(1)
+    pyautogui.write('surf bc.game/game/classic-dice')
+    time.sleep(1)
+    pyautogui.press('enter')
+    pause(120)
+    pyautogui.hold('ctrl'):
+        pyautogui.press('-', presses=6)
+    pause(120)
+    pyautogui.moveTo(x=232, y=372)
+    time.sleep(3)
+    pyautogui.doubleClick()
+    time.sleep(3)
+    pyautogui.write('1.2375')
+    time.sleep(1)
+    pyautogui.press('enter')
+    time.sleep(3)
+    pyautogui.click(x=345, y=375)
+    time.sleep(3)
+    pyautogui.click(x=60, y=358)
+    time.sleep(1)
+    pyautogui.moveTo(x=146, y=360)
+    time.sleep(1)
+    pyautogui.doubleClick()
+    time.sleep(1)
+    pyautogui.write('25')
+    time.sleep(1)
+    pyautogui.press('enter')
+    time.sleep(1)
     return
-
-def start():
-    time.sleep(1)
-    pyautogui.click(x=135, y=524)
-    time.sleep(1)
-    print('start')
-    return
-
-def speedmod():
-    time.sleep(1)
-    pyautogui.moveTo(x=374, y=496)
-    time.sleep(5)
-    pyautogui.click()
-    time.sleep(1)
-    pyautogui.moveTo(x=405, y=496)
-    time.sleep(5)
-    pyautogui.click()
-    time.sleep(1)
-    print('speedmod')
-    return
-
-def main():
-    loop()
-    time.sleep(1)
-    speedmod()
-    time.sleep(1)
-    start()
-    time.sleep(1)
-    return
-
-main()
-
-for _ in range(4):
-    time.sleep(1)
-    loop()
-    time.sleep(1)
-    start()
+main() 
