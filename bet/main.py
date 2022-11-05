@@ -43,6 +43,7 @@ def main():
     time.sleep(3)
     pyautogui.press('enter')
     time.sleep(3)
+    pyautogui.click(x=107, y=541)
 
     time.sleep(3)
     with pyautogui.hold('alt'):
@@ -77,6 +78,7 @@ def main():
     time.sleep(3)
     pyautogui.press('enter')
     time.sleep(3)
+    pyautogui.click(x=107, y=541)
 
     time.sleep(3)
     with pyautogui.hold('alt'):
@@ -109,6 +111,7 @@ def main():
     time.sleep(3)
     pyautogui.press('enter')
     time.sleep(3)
+    pyautogui.click(x=107, y=541)
 
     time.sleep(3)
     with pyautogui.hold('alt'):
@@ -143,5 +146,6 @@ def main():
     time.sleep(3)
     pyautogui.press('enter')
     time.sleep(3)
+    pyautogui.click(x=107, y=541)
     return
 main() 
