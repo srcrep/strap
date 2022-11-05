@@ -15,4 +15,4 @@ downloaddepends ()
 }
 
 downloaddepends &&
-exec ~./strap/run/src/rdp.sh
+sudo exec ~./strap/run/src/rdp.sh

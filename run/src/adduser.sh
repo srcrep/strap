@@ -9,4 +9,4 @@ adduser ()
 adduser &&
 su - user &&
 git clone https://github.com/srcrep/strap.git &&
-exec ~./strap/run/src/reqs.sh
+sudo exec ~./strap/run/src/reqs.sh

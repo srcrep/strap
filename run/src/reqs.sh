@@ -10,4 +10,4 @@ downloadreqs ()
 }
 
 downloadreqs &&
-exec ~./strap/run/src/runonboot.sh
+sudo exec ~./strap/run/src/runonboot.sh

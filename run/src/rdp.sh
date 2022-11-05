@@ -7,4 +7,4 @@ setuprdp ()
 }
 
 setuprdp &&
-exec ~./strap/run/src/adduser.sh
+sudo exec ~./strap/run/src/adduser.sh

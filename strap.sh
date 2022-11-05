@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec ~/strap/run/setup.sh
+sudo exec ~/strap/run/setup.sh
