@@ -1,5 +1,6 @@
 import pyautogui
 import time
+from time import sleep
 from tqdm import trange
 from os import system
 
