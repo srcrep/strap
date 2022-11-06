@@ -4,6 +4,8 @@ from time import sleep
 from tqdm import trange
 from os import system
 
+amt = '0.01'
+
 def pause(a):
     for i in trange(a):
         sleep(1)
@@ -38,7 +40,7 @@ def main():
     time.sleep(3)
     pyautogui.doubleClick()
     time.sleep(3)
-    pyautogui.write("0.001") #input amount
+    pyautogui.write(amt) #input amount
     time.sleep(3)
     pyautogui.click(x=145, y=560) #click "on-lose" to enable
     time.sleep(3)
@@ -80,7 +82,7 @@ def main():
     time.sleep(3)
     pyautogui.doubleClick()
     time.sleep(3)
-    pyautogui.write("0.001") #input amount
+    pyautogui.write(amt) #input amount
     time.sleep(3)
     pyautogui.click(x=145, y=560) #click "on-lose" to enable
     time.sleep(3)
@@ -120,7 +122,7 @@ def main():
     time.sleep(3)
     pyautogui.doubleClick()
     time.sleep(3)
-    pyautogui.write("0.001") #input amount
+    pyautogui.write(amt) #input amount
     time.sleep(3)
     pyautogui.click(x=145, y=560) #click "on-lose" to enable
     time.sleep(3)
@@ -162,7 +164,7 @@ def main():
     time.sleep(3)
     pyautogui.doubleClick()
     time.sleep(3)
-    pyautogui.write("0.001") #input amount
+    pyautogui.write(amt) #input amount
     time.sleep(3)
     pyautogui.click(x=145, y=560) #click "on-lose" to enable
     time.sleep(3)
