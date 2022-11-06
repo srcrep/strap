@@ -4,7 +4,7 @@ from time import sleep
 from tqdm import trange
 from os import system
 
-amt = '0.002'
+amt = float(input("Bet Amount: "))
 
 def pause(a):
     for i in trange(a):
