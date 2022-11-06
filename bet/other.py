@@ -130,7 +130,7 @@ def main():
     time.sleep(3)
     pyautogui.doubleClick()
     time.sleep(3)
-    pyautogui.write('25') #"on-lose" percentage increase amount
+    pyautogui.write('850') #"on-lose" percentage increase amount
     time.sleep(3)
     pyautogui.press('enter')
     time.sleep(3)
@@ -172,7 +172,7 @@ def main():
     time.sleep(3)
     pyautogui.doubleClick()
     time.sleep(3)
-    pyautogui.write('25') #"on-lose" percentage increase amount
+    pyautogui.write('850') #"on-lose" percentage increase amount
     time.sleep(3)
     pyautogui.press('enter')
     time.sleep(3)
