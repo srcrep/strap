@@ -4,7 +4,7 @@ from time import sleep
 from tqdm import trange
 from os import system
 
-amt = '0.01'
+amt = '0.002'
 
 def pause(a):
     for i in trange(a):
