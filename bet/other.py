@@ -22,10 +22,10 @@ def main():
     pyautogui.write('surf bc.game/game/classic-dice')
     time.sleep(3)
     pyautogui.press('enter')
-    pause(120)
+    pause(15)
     with pyautogui.hold('ctrl'):
         pyautogui.press('-')
-    pause(120)
+    pause(15)
     pyautogui.moveTo(x=523, y=582) #payout location
     time.sleep(3)
     pyautogui.doubleClick()
@@ -53,7 +53,7 @@ def main():
     pyautogui.press('enter')
     time.sleep(3)
     pyautogui.click(x=243, y=770) #start
-
+"""
 #second
     time.sleep(3)
     with pyautogui.hold('alt'):
@@ -177,6 +177,6 @@ def main():
     pyautogui.press('enter')
     time.sleep(3)
     pyautogui.click(x=243, y=770) #start
+"""
 
-    return
 main() 
