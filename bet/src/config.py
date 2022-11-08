@@ -1,16 +1,32 @@
 #!/bin/python3
 
+screen_height = int(input('Screen Hight (in pixels) : '))
+screen_width = int(input('Screen Width (in pixels) : '))
+payout_amount = float(input('Payout Amount : '))
+bet_amount = float(input('Bet Amount : '))
+loss_increase_percentage = int(input('Percentage Increase on Loss : '))
+             
 class Config: #800x600 currently... need to decide best way to take different resolutions
-    def __init__(self):
+    def __init__(self, screen_height, screen_width):
         self
-        self.payout_location = ('232','372')
-        self.payout_amount = '4.95'
-        self.auto_bet_location = ('139','117')
-        self.bet_amount_location = ('80','165')
-        self.bet_amount = '0.0001'
-        self.enable_loss_increase_location = ('60','358')
-        self.loss_increase_location = ('146','360')
-        self.loss_increase_percentage = '25'
-        self.start_location = ('107','541')
-        return payout_location, payout_amount, auto_bet_location, bet_amount_location. bet_amount, enable_loss_increase_location, loss_increase_location, loss_increase_percentage, start_location
-    return payout_location, payout_amount, auto_bet_location, bet_amount_location. bet_amount, enable_loss_increase_location, loss_increase_location, loss_increase_percentage, start_location
+        self.payout_location = payout_location(screen_height, screen_width)
+        self.payout_amount = payout_amount
+        self.auto_bet_location = auto_bet_location(screen_height, screen_width)
+        self.bet_amount_location = bet_amount_location(screen_height, screen_width)
+        self.bet_amount = bet_amount
+        self.enable_loss_increase_location = enable_loss_increase_location(screen_height, screen_width)
+        self.loss_increase_location = loss_increase_location(screen_height, screen_width)
+        self.loss_increase_percentage = loss_increase_percentage
+        self.start_location = start_location(screen_height, screen_width)
+        
+    def payout_location(screen_height, screen_width):
+        
+    def auto_bet_location(screen_height, screen_width):
+        
+    def bet_amount_location(screen_height, screen_width):
+        
+    def enable_loss_increase_location(screen_height, screen_width):
+        
+    def loss_increase_location(screen_height, screen_width):
+        
+    def start_location(screen_height, screen_width):
