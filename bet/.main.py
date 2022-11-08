@@ -53,7 +53,7 @@ def main():
     time.sleep(3)
     pyautogui.click(x=107, y=541) # start
 
-    #bcgame limbo
+    #bcgame limbo NEED TO VERIFY LACATIONS ARE SAME AS CLASSIC DICE
     time.sleep(3)
     with pyautogui.hold('alt'):
         pyautogui.press('p')
@@ -93,7 +93,7 @@ def main():
     time.sleep(3)
     pyautogui.click(x=107, y=541) # start
 
-    #nanogames classic-dice
+    #nanogames classic-dice NEED TO VERIFY LOCATIONS ARE THE SAME AS BCGAME
     time.sleep(3)
     with pyautogui.hold('alt'):
         pyautogui.press('p')
