@@ -1,13 +1,13 @@
 #!/bin/bash
+function pause(){
+ read -s -n 1 -p "Press "Enter" to logon as root . . ."
+ echo ""
+}
 sudo apt update -y &&
 sudo apt install dwm suckless-tools surf -y &&
 sudo apt install python3-pip -y &&
 sudo apt install python3-tk -y &&
 sudo apt install python3-dev -y &&
 sudo apt upgrade -y &&
-python3 -m pip install --upgrade pipreqs &&
-cd ~/strap/bet/ &&
-~/.local/bin/pipreqs &&
-python3 -m pip install --upgrade -r requirements.txt &&
-cp ~/strap/bet/other.py ~/main.py &&
-sudo reboot
+pause &&
+sudo su
