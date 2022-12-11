@@ -20,13 +20,14 @@ class Config: #800x600 currently... need to decide best way to take different re
         self.start_location = start_location(screen_height, screen_width)
         
     def payout_location(screen_height, screen_width):
-        
+        return
     def auto_bet_location(screen_height, screen_width):
-        
+        return
     def bet_amount_location(screen_height, screen_width):
-        
+        return
     def enable_loss_increase_location(screen_height, screen_width):
-        
+        return
     def loss_increase_location(screen_height, screen_width):
-        
+        return
     def start_location(screen_height, screen_width):
+        return
