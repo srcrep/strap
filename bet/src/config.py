@@ -1,10 +1,10 @@
 #!/bin/python3
 
-screen_width = int(input('Screen Hight (in pixels) : '))
-screen_height = int(input('Screen Width (in pixels) : '))
-payout_amount = float(input('Payout Amount : '))
-bet_amount = float(input('Bet Amount : '))
-loss_increase_percentage = int(input('Percentage Increase on Loss : '))
+screen_width = 800 # int(input('Screen Hight (in pixels) : '))
+screen_height = 600 # int(input('Screen Width (in pixels) : '))
+payout_amount = 99 # float(input('Payout Amount : '))
+bet_amount = 0.0001 # float(input('Bet Amount : '))
+loss_increase_percentage = 1.1 # int(input('Percentage Increase on Loss : '))
              
 class Config: #800x600 currently... need to decide best way to take different resolutions
 
