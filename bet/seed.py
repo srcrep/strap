@@ -17,6 +17,10 @@ def pause(a):
         system('clear')
     return
 
+times_to_run = 4
+for i in range(0, times_to_run):
+    pyautogui.hotkey('ctrl', 'shift', c)
+
 classic_dice_payout_location = config.classic_dice.payout_location
 classic_dice_auto_bet_location = config.classic_dice.auto_bet_location
 classic_dice_bet_amount_location = config.classic_dice.bet_amount_location
